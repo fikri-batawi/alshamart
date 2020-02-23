@@ -2,10 +2,10 @@
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active" data-interval="10000">
-        <img src="<?= base_url('assets/img/carousel/carousel1.jpg') ?>" class="d-block w-100" alt="...">
+        <img src="<?= base_url('assets/img/carousel/slider1.png') ?>" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item" data-interval="2000">
-        <img src="<?= base_url('assets/img/carousel/carousel2.jpg') ?>" class="d-block w-100" alt="...">
+        <img src="<?= base_url('assets/img/carousel/artboard1.png') ?>" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
         <img src="<?= base_url('assets/img/carousel/carousel3.jpg') ?>" class="d-block w-100" alt="...">
