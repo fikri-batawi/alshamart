@@ -13,6 +13,10 @@ h3{
         margin:auto;
         .row{
             .col-8{
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
                 .card{
                     box-shadow: $shadow;
                     width: 320px;
