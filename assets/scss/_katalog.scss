@@ -1,0 +1,101 @@
+
+.justify-content-between{
+    overflow: hidden;
+    .col-4{
+        padding: 0;
+        h3{
+            margin-left: 10rem;
+        }
+        
+    }
+    .icon{
+        margin-right: 1.2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+.katalog-makanan{
+    background-color: $bg-color;
+    height: 55rem;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+    .container{
+        .row{
+            .col-8{
+                .card{
+                    width: 320px;
+                    height: 300px;
+                    padding-top:-100px !important;
+                    background-color: rgba(255,255,255) !important;
+                    box-shadow: $shadow;
+                }
+            }
+        }
+    }
+    .ilustrasi-desk{
+        .img-mid{
+            position: absolute;
+            top:13rem;
+            left:15rem;
+            z-index: -1;
+        }
+        .img-left{
+            position: absolute;
+            top:34rem;
+            left:7rem;
+            z-index: -1;
+        }
+        .img-right{
+            position: absolute;
+            top:40.3rem;
+            left:80rem;
+            z-index: -1;
+        }
+    }
+    .ilustrasi-mob{
+        display: none;
+    }
+}
+
+.katalog-material{
+    background-color: $bg-color;
+    height: 55rem;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+    .container{
+        .row{
+            .col-8{
+                .card{
+                    width: 320px;
+                    height: 300px;
+                    box-shadow: $shadow;
+                }
+            }
+        }
+    }
+    .ilustrasi-desk{
+        .img-mid{
+            position: absolute;
+            top:14rem;
+            left:9rem;
+            z-index: -1;
+        }
+        .img-left{
+            position: absolute;
+            top:39.7rem;
+            left:6rem;
+            z-index: -1;
+        }
+        .img-right{
+            position: absolute;
+            top:38rem;
+            left:60rem;
+            z-index: -1;
+        }
+    }
+    .ilustrasi-mob{
+        display: none;
+    }
+}

@@ -1,0 +1,73 @@
+#carouselExampleInterval{
+    position: relative;
+}
+.kaca{
+    top:0;
+    left:0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+
+//welcome
+.welcome{
+    h2{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .row{
+        .col-12{
+            p{
+                font-size: 1.1rem;
+            }
+        }
+    }
+    h4{
+        margin-top: 2.5rem;
+        margin-left: 8rem;
+    }
+}
+.size{
+    max-height: 200rem;
+    max-width: 200rem;
+    border-radius: 50%;
+}
+
+
+//produk
+.product{
+    background-color: $bg-color;
+    box-shadow: $shadow;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    padding: 1rem 0;
+    margin-top:0.5rem;
+    .row{
+        .col-8{
+            .card{
+                width: 13rem;
+                height: 13rem;
+            }
+        }
+    }
+    .ilustrasi-desk{
+        width: 40%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        right: 0;
+        img{
+            margin-top: 3.5rem;
+            margin-left: 3.5rem;
+            height: 90%;
+            width: 90%;
+        }
+    }
+    .ilustrasi-mob{
+        display: none;
+    }
+}
+
+
