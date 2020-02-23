@@ -38,19 +38,19 @@
             <h5 class="mt-4">Materials</h5>
             <div class="row material">
 
-                <div class="col-8 col-lg-4 mt-2">
+                <div class="col-8 col-md-6 col-lg-4 mt-2">
                 <div class="card bayangan">   
                     <div class="card-body " >
-                        <h5 class="card-title">Jajanan Khas Dieng</h5>
-                        <p>Aneka macam makanan ringan dan minuman khas Dieng, Wonosobo</p>
-                        <p>"Cita rasa khas Dieng"</p>
+                        <h5 class="card-title">Aneka Kaca Film</h5>
+                        <p>Kaca film dengan berbagai motif dan berbagai bahan</p>
+                        <p>"Kaca film untuk privasi ruangan anda"</p>
                         <a href="<?= site_url('produk/material') ?>" class="tombol">Selengkapnya</a>
                     </div>
                     </div>
                 </div>
 
                 <?php for($i=0; $i<2; $i++) : ?>
-                    <div class="col-8 col-lg-4 mt-2">
+                    <div class="col-8 col-md-6 col-lg-4 mt-2">
                         <a href="<?= base_url('produk/makanan') ?>">
                             <div class="card bayangan">   
                                 <div class="card-body " >
