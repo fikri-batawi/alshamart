@@ -3,21 +3,23 @@
 ?>
 
     <!-- Produk -->
-    <h3 class="mb-2">Produk</h3>
+    <h3 class="mb-2">Product</h3>
     <div class="produk bg-color">
         <div class="container">
-            <h5 class="mt-2">Makanan</h5>
+            <h5 class="mt-2">Foods</h5>
             <div class="row makanan">
 
                 <?php for($i=0; $i<2; $i++) : ?>
                     <div class="col-8 col-lg-4 mt-2">
-                        <div class="card">   
-                            <div class="card-body " >
-                                <img src="<?= base_url('assets/img/produk/'.$makanan[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
-                                <h5 class="card-title">Rp. <?= $makanan[$i]['harga'] ?>,-</h5>
-                                <p class="card-text"><?= $makanan[$i]['deskripsi'] ?></p>
+                        <a href="<?= base_url('produk/makanan') ?>">
+                            <div class="card">   
+                                <div class="card-body " >
+                                    <img src="<?= base_url('assets/img/produk/'.$makanan[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
+                                    <h5 class="card-title"><?= $makanan[$i]['deskripsi'] ?></h5>
+                                    <p class="card-text">Rp. <?= $makanan[$i]['harga'] ?>,-</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 <?php endfor ?>
 
@@ -33,7 +35,7 @@
                 </div>
             </div>
 
-            <h5 class="mt-4">Material</h5>
+            <h5 class="mt-4">Materials</h5>
             <div class="row material">
 
                 <div class="col-8 col-lg-4 mt-2">
@@ -49,11 +51,15 @@
 
                 <?php for($i=0; $i<2; $i++) : ?>
                     <div class="col-8 col-lg-4 mt-2">
-                        <div class="card bayangan">   
-                            <div class="card-body " >
-                                <img src="<?= base_url('assets/img/produk/'.$material[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
+                        <a href="<?= base_url('produk/makanan') ?>">
+                            <div class="card bayangan">   
+                                <div class="card-body " >
+                                    <img src="<?= base_url('assets/img/produk/'.$material[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
+                                    <h5 class="card-title"><?= $material[$i]['nama_produk'] ?></h5>
+                                    <p class="card-text">Rp. <?= $material[$i]['harga'] ?>,-</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 <?php endfor ?>
             </div>
