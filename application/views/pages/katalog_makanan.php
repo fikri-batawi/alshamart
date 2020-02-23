@@ -23,7 +23,7 @@
         <div class="container ">
             <div class="row">
                 <?php foreach ($produks as $key => $produk) : ?>
-                <div class="col-8 col-lg-4 mt-2">
+                <div class="col-8 col-md-6 col-lg-4 mt-2">
                     <div class="card">   
                         <div class="card-body">
                             <img src="<?= base_url('assets/img/produk/'.$produk['gambar'].'') ?>" class="card-img-top" alt="...">

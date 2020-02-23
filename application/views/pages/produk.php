@@ -4,13 +4,13 @@
 
     <!-- Produk -->
     <h3 class="mb-2">Product</h3>
-    <div class="produk bg-color">
+    <div class="produk">
         <div class="container">
             <h5 class="mt-2">Foods</h5>
             <div class="row makanan">
 
                 <?php for($i=0; $i<2; $i++) : ?>
-                    <div class="col-8 col-lg-4 mt-2">
+                    <div class="col-8 col-md-6 col-lg-4 mt-2">
                         <a href="<?= base_url('produk/makanan') ?>">
                             <div class="card">   
                                 <div class="card-body " >
@@ -23,7 +23,7 @@
                     </div>
                 <?php endfor ?>
 
-                <div class="col-8 col-lg-4 mt-2">
+                <div class="col-8 col-md-6 col-lg-4 mt-2">
                 <div class="card bayangan">   
                     <div class="card-body " >
                         <h5 class="card-title">Jajanan Khas Dieng</h5>

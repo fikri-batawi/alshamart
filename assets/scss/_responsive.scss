@@ -205,6 +205,8 @@
 
     /* Produk */
     .produk {
+        overflow: hidden;
+        position: relative;
         .container{
             .row{
                 -ms-flex-pack: center !important;

@@ -518,6 +518,10 @@ h3 {
   }
 
   /* Produk */
+  .produk {
+    overflow: hidden;
+    position: relative;
+  }
   .produk .container .row {
     -ms-flex-pack: center !important;
     justify-content: center !important;
