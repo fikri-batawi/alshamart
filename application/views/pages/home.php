@@ -6,14 +6,14 @@
 
 <!-- Welcome -->
 <div class="container welcome">
-    <h2 class="mt-5">Selamat Datang</h2>
+    <h2 class="mt-5"> <b> Selamat Datang </b></h2>
     <div class="row justify-content-center welcome">
         <div class="col-12 col-md-8 col-lg-3 ">
             <img src="<?= base_url('assets/img/gambar/ava.jpg') ?>" class="size" alt="...">      
         </div>
         <div class="col-12 col-md-8 col-lg-5 ml-3">
             <h5>Rozikin</h5>
-            <p class="mt-4">Selamat datang di website tokoku, kami menjual aneka jajanan khas Dieng dan berbagai kaca film untuk memperindah ruangan pribadi atau ruangan kerja anda</p>
+            <p class="mt-4">Selamat datang di website AlshaMart, kami menjual aneka jajanan khas Dieng dan berbagai kaca film untuk memperindah ruangan pribadi atau ruangan kerja anda</p>
         </div>
     </div>
     <h4>Hot Produk</h4>
