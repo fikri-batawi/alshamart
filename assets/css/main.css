@@ -81,20 +81,19 @@ h3 {
   width: 100%;
   margin: auto;
 }
-.produk .container .row .col-8 a {
+.produk .container .makanan a, .produk .container .material a {
   color: black;
   text-decoration: none;
 }
-.produk .container .row .col-8 .card {
+.produk .container .makanan .card, .produk .container .material .card {
   box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2);
-  width: 320px;
-  height: 300px;
-  padding-top: -100px !important;
+  width: 20rem;
+  margin-left: 3rem;
 }
-.produk .container .row .col-8 .card .card-body {
+.produk .container .makanan .card .card-body, .produk .container .material .card .card-body {
   text-align: center;
 }
-.produk .container .row .col-8 .card .card-body .card-img-top {
+.produk .container .makanan .card .card-body .card-img-top, .produk .container .material .card .card-body .card-img-top {
   height: 11rem;
   margin-bottom: 0.5rem;
 }
@@ -139,7 +138,6 @@ h3 {
   padding: 10px 20px;
   border: 3px solid #efe8ea;
   border-radius: 15px;
-  position: relative;
 }
 
 .tombol::after {
@@ -148,13 +146,13 @@ h3 {
   background-color: white;
   top: 0.4rem;
   left: 0.9rem;
-  position: absolute;
   height: 1.6rem;
   width: 7rem;
+  padding: 5px;
   border-radius: 0.5rem;
 }
 
-.ilustrasi-mob {
+.img-top, .img-bot {
   display: none;
 }
 
@@ -238,6 +236,10 @@ h3 {
   color: rgba(0, 0, 0, 0.5);
 }
 
+body {
+  z-index: -999;
+}
+
 .justify-content-between {
   overflow: hidden;
 }
@@ -257,15 +259,16 @@ h3 {
   background-color: rgba(252, 234, 21, 0.8);
   height: 55rem;
   position: relative;
-  z-index: -2;
   overflow: hidden;
 }
-.katalog-makanan .container .row .col-8 .card {
-  width: 320px;
-  height: 300px;
+.katalog-makanan .container .row .card {
+  width: 20rem;
   padding-top: -100px !important;
   background-color: white !important;
   box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2);
+}
+.katalog-makanan .container .row .card p, .katalog-makanan .container .row .card h5 {
+  margin-bottom: 5px;
 }
 .katalog-makanan .ilustrasi-desk .img-mid {
   position: absolute;
@@ -290,16 +293,27 @@ h3 {
 }
 
 .katalog-material {
-  background-color: rgba(252, 234, 21, 0.8);
+  background-color: rgba(252, 234, 21, 0.5);
   height: 55rem;
   position: relative;
-  z-index: -2;
   overflow: hidden;
 }
-.katalog-material .container .row .col-8 .card {
-  width: 320px;
-  height: 300px;
+.katalog-material .container .row .card {
+  width: 16rem;
+  height: 16rem;
   box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2);
+}
+.katalog-material .container .row .card h5 {
+  margin-bottom: 5px;
+}
+.katalog-material .container .row .card p {
+  margin-bottom: 5px;
+}
+.katalog-material .container .desc {
+  background-color: white;
+  height: 200px;
+  width: 500px;
+  overflow-y: auto;
 }
 .katalog-material .ilustrasi-desk .img-mid {
   position: absolute;
@@ -410,6 +424,7 @@ h3 {
 
   .ilustrasi-mob .img-lb-right {
     position: absolute;
+    z-index: -1;
     right: 0;
     bottom: 0;
   }
@@ -518,6 +533,10 @@ h3 {
   }
 
   /* Produk */
+  h3 {
+    margin-left: 9rem;
+  }
+
   .produk {
     overflow: hidden;
     position: relative;
@@ -526,20 +545,16 @@ h3 {
     -ms-flex-pack: center !important;
     justify-content: center !important;
   }
-  .produk .container .row .col-8 {
+  .produk .container .row .card {
     margin-top: 2rem !important;
-  }
-  .produk .container .row .col-8 .card {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: white;
+    height: 17rem;
+    margin: auto;
   }
 
   /* Image */
   .img, .bg-img {
     display: none;
-  }
-
-  .ilustrasi-mob {
-    display: block;
   }
 
   .img-top {
@@ -552,6 +567,7 @@ h3 {
 
   .img-bot {
     position: absolute;
+    display: inline-block;
     top: 80rem;
     left: 3rem;
     width: 25rem;

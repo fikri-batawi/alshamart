@@ -23,15 +23,16 @@
         <div class="container ">
             <div class="row">
                 <?php foreach ($produks as $key => $produk) : ?>
-                <div class="col-8 col-md-6 col-lg-4 mt-2">
-                    <div class="card">   
-                        <div class="card-body">
+
+                    <div class="card mt-3">   
+                        <div class="card-body ">
                             <img src="<?= base_url('assets/img/produk/'.$produk['gambar'].'') ?>" class="card-img-top" alt="...">
                             <h5 class="card-title"><?= $produk['deskripsi'] ?></h5>
                             <p class="card-text">Rp. <?= $produk['harga'] ?>,-</p>
+                            <p class="card-text"><?= $produk['deskripsi'] ?></p>
+                            <a href="<?= $produk['url'] ?>" class="btn btn-primary">Beli</a>
                         </div>
                     </div>
-                </div>
                 <?php endforeach ?>
             </div>
         </div>

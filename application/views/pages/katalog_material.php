@@ -20,15 +20,32 @@
     <div class="katalog-material">
         <div class="container ">
             <div class="row">
-                <?php foreach ($produks as $key => $produk) : ?>
-                <div class="col-8 col-md-6 col-lg-4 mt-3">
-                    <div class="card">   
+                <?php for($i=0; $i<3; $i++ ) : ?>
+                
+                    <div class="card mx-auto mt-2">   
                         <div class="card-body " >
-                            <img src="<?= base_url('assets/img/produk/'.$produk['gambar'].'') ?>" class="card-img-top" alt="...">
+                            <img src="<?= base_url('assets/img/produk/'.$produks[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
+                            <h5 class="card-title"><?= $produks[$i]['nama_produk'] ?></h5>
+                            <p>Harga : <?= $produks[$i]['harga'] ?> </p>
+                            <p class="card-text"><?= $produks[$i]['deskripsi'] ?></p>
+                        </div>
+                    </div>
+                
+                <?php endfor ?>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-10 desc">
+                    <h5 class="mt-2">Macam-macam kaca Film : </h5>
+                    <div class="row justify-content-center">
+                        <div class="col-11">
+                            <p>Kaca Film Sandblast <br> Berfungsi sebagai kaca grafik yang memberikan kesan privasi ruangan siang dan malam</p>
+                            <p>Kaca Film Motif <br> Berfungsi mnghiasi kaca jendela atau kaca pembatas/partisi (kantor. Gedung. Rumah tinggal) <br> sehingga menjadi lebih exclusif dan modern.</p>
+                            <p>Kaca film Ryben (black) <br> Berfungsi menolak/meredam panas dari sinar matahari UV dari 70% sampai 90% dan mempunyai daya tahan rekat yang sangat kuat sehingga tidak mudah terkelupas dan tidak mudah pudar. Tahan gores. Sekaligus berfungsi untuk melindungi kaca.</p>
+                            <p>Kaca Film Reflective (one way miror) <br> Berfungi pandangan hanya satu sisi saja yang dapat melihat dan mengurangi panas sinar matahari 70% sampai 90% tahan gores <br>sekaligus melindungi kaca.</p>
+                            <p>Cuting Stiker <br> Mendekor ruangan sesuai design yang di inginkan Seperti <br> Logo/nama perusahaan, Pepohonan, Hewan/binatang, Model batik, Kaligrafi dll</p>
                         </div>
                     </div>
                 </div>
-                <?php endforeach ?>
             </div>
         </div>
         <div class="ilustrasi-desk">

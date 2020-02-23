@@ -90,6 +90,7 @@
     }
     .ilustrasi-mob .img-lb-right{
         position: absolute;
+        z-index: -1;
         right:0;
         bottom:0;
     }
@@ -204,6 +205,7 @@
     }
 
     /* Produk */
+    h3{margin-left: 9rem;}
     .produk {
         overflow: hidden;
         position: relative;
@@ -211,21 +213,19 @@
             .row{
                 -ms-flex-pack: center !important;
                 justify-content: center !important;
-                .col-8{
-                    margin-top: 2rem !important;
                     .card{
-                        background-color: rgba(255, 255, 255, 0.5);
+                        margin-top: 2rem !important;
+                        background-color: rgba(255, 255, 255);
+                        height: 17rem;
+                        margin:auto;
                     }
-                }
+                
             }
         }
     }
     /* Image */
     .img,.bg-img{
         display: none;
-    }
-    .ilustrasi-mob{
-        display: block;
     }
     .img-top{
         position: absolute;
@@ -236,6 +236,7 @@
     }
     .img-bot{
         position: absolute;
+        display: inline-block;
         top:80rem;
         left:3rem;
         width: 25rem;
