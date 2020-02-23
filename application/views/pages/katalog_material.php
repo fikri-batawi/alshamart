@@ -9,29 +9,32 @@
             <div class="col-10 col-lg-3">
                 <h3>Materials</h3>    
             </div>
-            <div class="col-10 col-lg-3">
-                <a href="https://www.tokopedia.com/alshacarica" target="_blank"> 
-                    <img src="<?= base_url('assets/img/icons/icon-tokped.png') ?>" class="icon" alt=""></a>
-                <a href="https://www.shopee.co.id/alshacarica" target="_blank"> 
-                    <img src="<?= base_url('assets/img/icons/icon-shoppe.png') ?>" class="icon" alt=""></a>
+            <div class="col-10 col-lg-4 number">
+                
+                    <img src="<?= base_url('assets/img/icons/icon-call.png') ?>" class="icon" alt="">
+                    0881025128403
+                <a href="https://wa.me/6283857879078" target="_blank"> 
+                    <img src="<?= base_url('assets/img/icons/icon-wa.png') ?>" class="icon" alt="">
+                    083857879078
+                </a>
             </div>
         </div>
     </div>
     <div class="katalog-material">
         <div class="container ">
             <div class="row">
-                <?php for($i=0; $i<3; $i++ ) : ?>
+                <?php foreach($produks as $produk) : ?>
                 
-                    <div class="card mx-auto mt-2">   
+                    <div class="card mx-auto mt-3">   
                         <div class="card-body " >
-                            <img src="<?= base_url('assets/img/produk/'.$produks[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
-                            <h5 class="card-title"><?= $produks[$i]['nama_produk'] ?></h5>
-                            <p>Harga : <?= $produks[$i]['harga'] ?> </p>
-                            <p class="card-text"><?= $produks[$i]['deskripsi'] ?></p>
+                            <img src="<?= base_url('assets/img/produk/'.$produk['gambar'].'') ?>" class="card-img-top" alt="...">
+                            <h5 class="card-title"><?= $produk['nama_produk'] ?></h5>
+                            <p>Harga : <?= $produk['harga'] ?> </p>
+                            <p class="card-text"><?= $produk['deskripsi'] ?></p>
                         </div>
                     </div>
                 
-                <?php endfor ?>
+                <?php endforeach ?>
             </div>
             <div class="row justify-content-center mt-4">
                 <div class="col-10 desc">
@@ -48,16 +51,17 @@
                 </div>
             </div>
         </div>
-        <div class="ilustrasi-desk">
-            <img src="<?= base_url('assets/img/gambar/Materials-03.png') ?>" class="img-mid" alt="">
-            <img src="<?= base_url('assets/img/gambar/Materials-02.png') ?>" class="img-left" alt="">
-            <img src="<?= base_url('assets/img/gambar/Materials-04.png') ?>" class="img-right" alt="">
-        </div>
+        
         <div class="ilustrasi-mob">
             <img src="<?= base_url('assets/img/gambar/Products-06.png') ?>" class="img-left" alt="">
             <img src="<?= base_url('assets/img/gambar/Materials-Mobile-02.png') ?>" class="img-mid" alt="">
             <img src="<?= base_url('assets/img/gambar/Products-06.png') ?>" class="img-right" alt="">
         </div>
+    </div>
+    <div class="ilustrasi-desk-material">
+            <img src="<?= base_url('assets/img/gambar/Materials-03.png') ?>" class="img-mid" alt="">
+            <img src="<?= base_url('assets/img/gambar/Materials-02.png') ?>" class="img-left" alt="">
+            <img src="<?= base_url('assets/img/gambar/Materials-04.png') ?>" class="img-right" alt="">
     </div>
     <!-- Katalog Akhir -->
 

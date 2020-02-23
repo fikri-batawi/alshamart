@@ -292,15 +292,26 @@ body {
   display: none;
 }
 
+.number a {
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.number img {
+  margin-right: 0 !important;
+}
+
 .katalog-material {
-  background-color: rgba(252, 234, 21, 0.5);
-  height: 55rem;
+  height: 65rem;
+  width: 100vw;
   position: relative;
   overflow: hidden;
 }
 .katalog-material .container .row .card {
-  width: 16rem;
-  height: 16rem;
+  width: 20rem;
+  height: 20rem;
   box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.2);
 }
 .katalog-material .container .row .card h5 {
@@ -311,30 +322,41 @@ body {
 }
 .katalog-material .container .desc {
   background-color: white;
-  height: 200px;
+  height: 300px;
   width: 500px;
   overflow-y: auto;
 }
-.katalog-material .ilustrasi-desk .img-mid {
+.katalog-material .ilustrasi-mob {
+  display: none;
+}
+
+.ilustrasi-desk-material {
+  width: 100vw;
+  height: 65rem;
+  position: absolute;
+  top: 7.5rem;
+  left: 0;
+  background-color: rgba(252, 234, 21, 0.8);
+  overflow: hidden;
+  z-index: -1;
+}
+.ilustrasi-desk-material .img-mid {
   position: absolute;
   top: 14rem;
   left: 9rem;
   z-index: -1;
 }
-.katalog-material .ilustrasi-desk .img-left {
+.ilustrasi-desk-material .img-left {
   position: absolute;
-  top: 39.7rem;
+  top: 49.7rem;
   left: 6rem;
   z-index: -1;
 }
-.katalog-material .ilustrasi-desk .img-right {
+.ilustrasi-desk-material .img-right {
   position: absolute;
-  top: 38rem;
+  top: 48rem;
   left: 60rem;
   z-index: -1;
-}
-.katalog-material .ilustrasi-mob {
-  display: none;
 }
 
 @media (max-width: 576px) {
@@ -493,9 +515,15 @@ body {
     z-index: -1;
   }
 
+  .number {
+    text-align: center;
+  }
+
   .katalog-material {
+    background-color: rgba(252, 234, 21, 0.8);
     height: auto;
     padding: 2rem 0;
+    position: relative;
   }
   .katalog-material .container .row {
     -ms-flex-pack: center !important;
@@ -503,9 +531,6 @@ body {
   }
   .katalog-material .container .row .col-8 {
     margin-top: 3rem !important;
-  }
-  .katalog-material .ilustrasi-desk {
-    display: none;
   }
   .katalog-material .ilustrasi-mob {
     overflow: hidden;
@@ -530,6 +555,10 @@ body {
     top: 75rem;
     left: 25rem;
     z-index: -1;
+  }
+
+  .ilustrasi-desk {
+    display: none;
   }
 
   /* Produk */

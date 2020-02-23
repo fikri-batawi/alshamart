@@ -163,9 +163,16 @@
             }
         }
     }
+
+    .number{
+        text-align: center;
+
+    }
     .katalog-material{
+        background-color: $bg-color;
         height: auto;
         padding: 2rem 0;
+        position: relative;
         .container{
             .row{
                 -ms-flex-pack: center !important;
@@ -175,9 +182,7 @@
                 }
             }
         }
-        .ilustrasi-desk{
-            display: none;
-        }
+        
         .ilustrasi-mob{
             overflow: hidden;
             display: block;
@@ -202,6 +207,9 @@
                 z-index: -1;
             }
         }
+    }
+    .ilustrasi-desk{
+        display: none;
     }
 
     /* Produk */
