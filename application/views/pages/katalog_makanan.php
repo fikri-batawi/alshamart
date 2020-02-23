@@ -24,7 +24,7 @@
             <div class="row">
                 <?php foreach ($produks as $key => $produk) : ?>
 
-                    <div class="card mt-3">   
+                    <div class="card mt-3 mx-auto">   
                         <div class="card-body ">
                             <img src="<?= base_url('assets/img/produk/'.$produk['gambar'].'') ?>" class="card-img-top" alt="...">
                             <h5 class="card-title"><?= $produk['deskripsi'] ?></h5>
