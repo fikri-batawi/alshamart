@@ -23,29 +23,39 @@
 <!-- Product -->
 <div class="product">
     <!-- Foods -->
-    <h5 class="ml-5">Makanan</h5>
+    <h5 class="ml-5">Foods</h5>
     <div class="row">
         <?php for($i=0; $i<3; $i++) : ?>
             <div class="col-8 col-md-6 col-lg-2">
-                <div class="card ml-5 mt-3 bayangan">
-                    <div class="card-body " >
-                        <img src="<?= base_url('assets/img/produk/'.$makanan[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
+                <a href="<?= base_url('produk/makanan') ?>">
+                    <div class="card ml-5 mt-3 bayangan">
+                        <div class="card-body " >
+                            <img src="<?= base_url('assets/img/produk/'.$makanan[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
+                            <h5 class="card-title">Carica</h5>
+                            <p>Harga : <?= $makanan[$i]['harga'] ?> </p>
+                            <p class="card-text"><?= $makanan[$i]['deskripsi'] ?></p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         <?php endfor ?>
     </div>
     <!-- Foods Akhir -->
     <!-- Material -->
-    <h5 class="ml-5 mt-5 txt-material">Material</h5>
+    <h5 class="ml-5 mt-5 txt-material">Materials</h5>
     <div class="row ">
         <?php for($i=0; $i<3; $i++) : ?>
             <div class="col-8 col-md-6 col-lg-2">
+            <a href="<?= base_url('produk/material') ?>">
                 <div class="card ml-5 mt-3 bayangan">
                     <div class="card-body " >
                         <img src="<?= base_url('assets/img/produk/'.$material[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
+                        <h5 class="card-title"><?= $material[$i]['nama_produk'] ?></h5>
+                        <p>Harga : <?= $material[$i]['harga'] ?> </p>
+                        <p class="card-text"><?= $material[$i]['deskripsi'] ?></p>
                     </div>
                 </div>
+            </a>
             </div>
         <?php endfor ?>
     </div>

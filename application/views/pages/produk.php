@@ -51,7 +51,7 @@
                     <div class="col-8 col-lg-4 mt-2">
                         <div class="card bayangan">   
                             <div class="card-body " >
-                                <img src="<?= base_url('assets/img/produk/'.$material[0]['gambar'].'') ?>" class="card-img-top" alt="...">
+                                <img src="<?= base_url('assets/img/produk/'.$material[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
                             </div>
                         </div>
                     </div>
