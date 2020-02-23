@@ -292,12 +292,14 @@ body {
   display: none;
 }
 
+.number a[target=_blank] {
+  cursor: pointer;
+}
 .number a {
   color: black;
   text-decoration: none;
   margin-left: 20px;
   margin-bottom: 20px;
-  cursor: pointer;
 }
 .number img {
   margin-right: 0 !important;
@@ -559,8 +561,9 @@ body {
     z-index: -1;
   }
 
-  .ilustrasi-desk {
+  .ilustrasi-desk-material {
     display: none;
+    top: 5rem;
   }
 
   /* Produk */

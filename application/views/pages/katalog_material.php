@@ -10,13 +10,15 @@
                 <h3>Materials</h3>    
             </div>
             <div class="col-10 col-lg-4 number">
-                
+                <a>
                     <img src="<?= base_url('assets/img/icons/icon-call.png') ?>" class="icon" alt="">
-                    0881025128403
-                <a href="https://wa.me/6283857879078" target="_blank"> 
+                    0881025128403</a>
+                
+                    <a href="https://wa.me/6283857879078" target="_blank"> 
                     <img src="<?= base_url('assets/img/icons/icon-wa.png') ?>" class="icon" alt="">
                     083857879078
-                </a>
+                    </a>
+
             </div>
         </div>
     </div>

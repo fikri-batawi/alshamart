@@ -61,13 +61,15 @@ body{
 
 
 .number{
+    a[target=_blank]{
+        cursor: pointer; 
+    }
     a{
         color: black;
         text-decoration: none;
         margin-left: 20px;
         margin-bottom: 20px;
-        cursor: pointer;
-        
+          
     }
     img{
         margin-right: 0 !important;

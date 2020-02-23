@@ -166,7 +166,6 @@
 
     .number{
         text-align: center;
-
     }
     .katalog-material{
         background-color: $bg-color;
@@ -208,8 +207,9 @@
             }
         }
     }
-    .ilustrasi-desk{
+    .ilustrasi-desk-material{
         display: none;
+        top:5rem;
     }
 
     /* Produk */
