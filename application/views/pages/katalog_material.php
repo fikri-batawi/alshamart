@@ -7,7 +7,7 @@
     <div class="container-fluid">
         <div class="row justify-content-between">
             <div class="col-10 col-lg-3">
-                <h3>Material</h3>    
+                <h3>Materials</h3>    
             </div>
             <div class="col-10 col-lg-3">
                 <a href="https://www.tokopedia.com/alshacarica" target="_blank"> 

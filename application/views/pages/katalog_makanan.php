@@ -6,7 +6,7 @@
     <div class="container-fluid">
         <div class="row justify-content-between ">
             <div class="col-10 col-lg-3">
-                <h3>Makanan</h3>    
+                <h3>Foods</h3>    
             </div>
             <div class="col-10 col-lg-4">
                 <a href="https://www.tokopedia.com/alshacarica" target="_blank"> 

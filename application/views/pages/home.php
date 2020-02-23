@@ -16,7 +16,7 @@
             <p class="mt-4">Selamat datang di website AlshaMart, kami menjual aneka jajanan khas Dieng dan berbagai kaca film untuk memperindah ruangan pribadi atau ruangan kerja anda</p>
         </div>
     </div>
-    <h4>Hot Produk</h4>
+    <h4>Hot Product</h4>
 </div>
 <!-- Welcome Akhir -->
 
@@ -31,7 +31,7 @@
                     <div class="card ml-5 mt-3 bayangan">
                         <div class="card-body " >
                             <img src="<?= base_url('assets/img/produk/'.$makanan[$i]['gambar'].'') ?>" class="card-img-top" alt="...">
-                            <h5 class="card-title">Carica</h5>
+                            <h5 class="card-title"><?= $makanan[$i]['nama_produk'] ?></h5>
                             <p>Harga : <?= $makanan[$i]['harga'] ?> </p>
                             <p class="card-text"><?= $makanan[$i]['deskripsi'] ?></p>
                         </div>
