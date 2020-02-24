@@ -15,7 +15,7 @@ class Auth extends CI_Controller {
 		$this->form_validation->set_rules('password','password','required');
 
 		if (!$this->form_validation->run()) {
-			$this->load->view('admin/login2.php');
+			$this->load->view('admin/login.php');
 		}else{
 			$email 		= $this->input->post('email');
 			$password 	= $this->input->post('password');
