@@ -8,7 +8,7 @@
         <img src="<?= base_url('assets/img/carousel/artboard1.png') ?>" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-        <img src="<?= base_url('assets/img/carousel/carousel3.jpg') ?>" class="d-block w-100" alt="...">
+        <img src="<?= base_url('assets/img/carousel/Slider2.png') ?>" class="d-block w-100" alt="...">
         </div>
     </div>
     <div class="kaca"></div>
