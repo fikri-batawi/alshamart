@@ -11,26 +11,22 @@ class Produk extends CI_Controller{
 
 	public function index()
 	{
-		$makanan = $this->produk_model->semuaProduk('makanan');
-		$material= $this->produk_model->semuaProduk('material');
-		$data['makanan'] = $makanan->result_array();
-		$data['material'] = $material->result_array();
+		$data['makanan'] = $this->produk_model->semuaProduk('makanan');
+		$data['material'] = $this->produk_model->semuaProduk('material');
 
 		$this->load->view('pages/produk',$data);
 	}
 
 	public function makanan()
 	{
-		$query = $this->produk_model->semuaProduk('makanan');
-		$data['produks'] = $query->result_array();
+		$data['produks'] = $this->produk_model->semuaProduk('makanan');
 
 		$this->load->view('pages/katalog_makanan',$data);
 	}
 
 		public function material()
 	{
-		$query = $this->produk_model->semuaProduk('material');
-		$data['produks'] = $query->result_array();
+		$data['produks'] = $this->produk_model->semuaProduk('material');
 
 		$this->load->view('pages/katalog_material', $data);
 	}

@@ -17,7 +17,7 @@ class Produk_model extends CI_Model{
 		if($limit!=0){
 			$this->db->limit($limit, $offset);
 		}
-		return $this->db->get('produk');
+		return $this->db->get('produk')->result_array();
 	}
 
 	public function produk($id)
@@ -26,12 +26,14 @@ class Produk_model extends CI_Model{
 		return $this->db->get('produk');
 	}
 
-	public function totalProduk()
+	public function totalProduk($kat = false)
 	{
 		$key = $this->input->get('cari');
 		$this->db->like('nama_produk',$key);
-
-		return $this->db->count_all('produk');
+		if($kat){
+			$this->db->where('kategori',$kat);
+		}
+		return $this->db->count_all_results('produk');
 	}
 
 	public function postProduk($data)

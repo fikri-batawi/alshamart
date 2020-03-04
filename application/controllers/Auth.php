@@ -15,7 +15,7 @@ class Auth extends CI_Controller {
 		$this->form_validation->set_rules('password','password','required');
 
 		if (!$this->form_validation->run()) {
-			$this->load->view('admin/login2.php');
+			$this->load->view('admin/login.php');
 		}else{
 			$email 		= $this->input->post('email');
 			$password 	= $this->input->post('password');
@@ -50,13 +50,13 @@ class Auth extends CI_Controller {
 		$this->form_validation->set_rules('password2','Password','required|min_length[8]|matches[password1]');
 
 		if(!$this->form_validation->run()){
-			$this->load->view('admin/registration2.php');
+			$this->load->view('admin/registration.php');
 		}else{
 			$data = [
 				'name' 			=> $this->input->post('name'),
 				'email' 		=> $this->input->post('email'),
 				'password' 		=> password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-				'image'			=> 'ava-default.jpg',
+				'image'			=> 'ava.svg',
 				'is_active'		=> 1,
 				'date_created'	=> time()
 			];

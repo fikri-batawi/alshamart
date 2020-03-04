@@ -1,86 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Log in</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="<?= base_url() ?>assets/temp/AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?= base_url() ?>assets/temp/AdminLTE/bower_components/font-awesome/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="<?= base_url() ?>assets/temp/AdminLTE/bower_components/Ionicons/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?= base_url() ?>assets/temp/AdminLTE/dist/css/AdminLTE.min.css">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="<?= base_url() ?>assets/temp/AdminLTE/plugins/iCheck/square/blue.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+  <title>Admin Login</title>
 
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <!-- Custom fonts for this template-->
+  <link href="<?= base_url('assets/temp/sb-admin-2/') ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="<?= base_url('assets/temp/sb-admin-2/') ?>css/sb-admin-2.min.css" rel="stylesheet">
+
 </head>
-<body class="hold-transition login-page">
-<div class="login-box">
-  <div class="login-box-body">
-    <p class="login-box-msg">Sign in to admin</p>
-    <?= $this->session->flashdata('message') ?>
-    <?= form_open() ?>
-      <div class="form-group has-feedback">
-        <?= form_input('email',set_value('email'),'class="form-control" placeholder="Email"') ?>
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-        <?= form_error('email','<small class="text-danger">','</small>') ?>
 
-      </div>
-      <div class="form-group has-feedback">
-        <?= form_password('password',null,'class="form-control" placeholder="Password"') ?>
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-        <?= form_error('password','<small class="text-danger">','</small>') ?>
-      </div>
-      <div class="row">
-        
-        <!-- /.col -->
-        <div class="col-xs-6">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+<body class="bg-gradient-primary">
+
+  <div class="container">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+      <div class="col-lg-7">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <div class="col-lg">
+                <div class="p-5">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Admin login</h1>
+                  </div>
+                  <?= $this->session->flashdata('message') ?>
+                  <?= form_open(null, 'class="user"') ?>
+                    <div class="form-group">
+                        <?= form_input('email',set_value('email'),'class="form-control form-control-user" placeholder="Email"') ?>
+                        <?= form_error('email','<small class="text-danger">','</small>') ?>
+                    </div>
+                    <div class="form-group">
+                      <?= form_password('password',null,'class="form-control form-control-user" placeholder="Password"') ?>
+                      <?= form_error('password','<small class="text-danger">','</small>') ?>
+                    </div>
+                    <button class="btn btn-primary btn-user btn-block">Sign In</button>
+                  </form>
+                  <hr>
+                  <div class="text-center">
+                    <!-- <a class="small" href="<?= base_url('auth/daftar') ?>">Create an Account!</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /.col -->
+
       </div>
-    </form>
 
-    <div class="social-auth-links text-center">
-      <!-- <a href="#">I forgot my password</a><br> -->
-      <a href="<?= base_url('auth/daftar') ?>" class="text-center">Register a new admin</a>
     </div>
-    <!-- /.social-auth-links -->
-
-    
 
   </div>
-  <!-- /.login-box-body -->
-</div>
-<!-- /.login-box -->
 
-<!-- jQuery 3 -->
-<script src="<?= base_url() ?>assets/temp/AdminLTE/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="<?= base_url() ?>assets/temp/AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- iCheck -->
-<script src="<?= base_url() ?>assets/temp/AdminLTE/plugins/iCheck/icheck.min.js"></script>
-<script>
-  $(function () {
-    $('input').iCheck({
-      checkboxClass: 'icheckbox_square-blue',
-      radioClass: 'iradio_square-blue',
-      increaseArea: '20%' /* optional */
-    });
-  });
-</script>
+  <!-- Bootstrap core JavaScript-->
+  <script src="<?= base_url('assets/temp/sb-admin-2/') ?>vendor/jquery/jquery.min.js"></script>
+  <script src="<?= base_url('assets/temp/sb-admin-2/') ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="<?= base_url('assets/temp/sb-admin-2/') ?>vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="<?= base_url('assets/temp/sb-admin-2/') ?>js/sb-admin-2.min.js"></script>
+
 </body>
+
 </html>

@@ -11,4 +11,8 @@ class Auth_model extends CI_Model{
 		return $this->db->get_where('user', ['email' => $email])->row_array();
 	}
 
+	public function totalUser(){
+		return $this->db->count_all('user');
+	}
+
 }
