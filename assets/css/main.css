@@ -15,6 +15,17 @@
   text-align: center;
   margin-bottom: 3rem;
 }
+.welcome .row .img-desk {
+  position: relative;
+}
+.welcome .row .img-desk #ava-welcome {
+  position: absolute;
+  top: 22px;
+  left: 37px;
+  width: 239px;
+  height: 236px;
+  border-radius: 50%;
+}
 .welcome .row .col-12 p {
   font-size: 1.1rem;
 }
@@ -168,8 +179,19 @@ h3 {
   margin-top: -4rem;
   margin-bottom: 2.5rem;
 }
+#about .row .col-10 .img-desk {
+  position: relative;
+}
 #about .row .col-10 .img-desk img {
   margin-left: -2rem;
+}
+#about .row .col-10 .img-desk #img-profile {
+  position: absolute;
+  top: 80px;
+  left: 297px;
+  width: 275px;
+  height: 250px;
+  border-radius: 50%;
 }
 #about .row .col-10 .img-mob {
   display: none;
@@ -369,6 +391,17 @@ body {
     text-align: center;
     margin: 1.5rem 0;
   }
+  .welcome .row .img-desk {
+    position: relative;
+  }
+  .welcome .row .img-desk #ava-welcome {
+    position: absolute;
+    top: 22px;
+    left: 108px;
+    width: 239px;
+    height: 236px;
+    border-radius: 50%;
+  }
   .welcome h2 {
     margin-bottom: 2rem;
   }
@@ -423,6 +456,16 @@ body {
   }
   #about .row .col-10 .img-mob {
     display: block;
+    position: relative;
+  }
+  #about .row .col-10 .img-mob #ava-profile-mobile {
+    position: absolute;
+    display: inline-block;
+    top: 45px;
+    left: 126px;
+    height: 235px;
+    width: 235px;
+    border-radius: 50%;
   }
   #about .row .col-10 .img-desk {
     display: none;

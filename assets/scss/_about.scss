@@ -12,8 +12,18 @@
                 margin-bottom: 2.5rem;
             }
             .img-desk{
+                position: relative;
                 img{
                     margin-left: -2rem;
+                }
+                #img-profile{
+                    position: absolute;
+                    // background-color: red;
+                    top:80px;
+                    left:297px;
+                    width: 275px;
+                    height: 250px;
+                    border-radius: 50%;
                 }
             }
             .img-mob{

@@ -4,10 +4,12 @@
     <div class="row">
         <div class="col-10 col-md-6 col-lg-6">
             <div class="img-desk">
-                <img src="<?= base_url('assets/img/gambar/Asset.png') ?>" class="w-100" alt="">
+                <img src="<?= base_url('assets/img/gambar/profile-about.png') ?>" class="w-100" alt="">
+                <img src="<?= base_url('assets/img/profile/'.$profile[0]['profile'].'') ?>" alt="" id="img-profile">
             </div>
             <div class="img-mob">
-                <img src="<?= base_url('assets/img/gambar/about-us-Mobile-02.png') ?>" class="w-100" alt="">
+                <img src="<?= base_url('assets/img/gambar/about-us-Mobile-02-02.png') ?>" class="w-100" alt="">
+                <img src="<?= base_url('assets/img/profile/'.$profile[0]['profile'].'') ?>" alt="" id="ava-profile-mobile">
             </div>
             <h4>Rozikin</h4>
         </div>

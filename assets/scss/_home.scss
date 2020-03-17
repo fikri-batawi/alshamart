@@ -17,6 +17,18 @@
         margin-bottom: 3rem;
     }
     .row{
+        .img-desk{
+            position: relative;
+            #ava-welcome{
+                position: absolute;
+                // background-color: red;
+                top:22px;
+                left:37px;
+                width: 239px;
+                height: 236px;
+                border-radius: 50%;
+            }
+        }
         .col-12{
             p{
                 font-size: 1.1rem;

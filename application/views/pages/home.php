@@ -8,8 +8,9 @@
 <div class="container welcome">
     <h2 class="mt-5"> <b> Selamat Datang </b></h2>
     <div class="row justify-content-center welcome">
-        <div class="col-12 col-md-8 col-lg-3 ">
-            <img src="<?= base_url('assets/img/gambar/ava.jpg') ?>" class="size" alt="...">      
+        <div class="col-12 col-md-8 col-lg-3 img-desk">
+            <img src="<?= base_url('assets/img/gambar/ava.png') ?>" class="size" alt="...">
+            <img src="<?= base_url('assets/img/profile/'.$profile[0]['profile'].'') ?>" alt="" id="ava-welcome">      
         </div>
         <div class="col-12 col-md-8 col-lg-5 ml-3">
             <h5>Rozikin</h5>
@@ -71,7 +72,7 @@
 <!-- Product Akhir -->
 
 <?php 
-    $this->load->view('partials/about');
+    $this->load->view('partials/about',$profile);
     $this->load->view('partials/latar_belakang');
     $this->load->view('partials/copyright');
 ?>

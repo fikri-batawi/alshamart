@@ -1,6 +1,20 @@
 @media (max-width: 576px) {
     /* Welcome */
     .welcome{
+        .row{
+            .img-desk{
+                position: relative;
+                #ava-welcome{
+                    position: absolute;
+                    // background-color: red;
+                    top:22px;
+                    left:108px;
+                    width: 239px;
+                    height: 236px;
+                    border-radius: 50%;
+                }
+            }
+        }
         text-align: center;
         margin:1.5rem 0;
         h2{
@@ -60,6 +74,17 @@
                 } 
                 .img-mob{
                     display: block;
+                    position: relative;
+                    #ava-profile-mobile{
+                        position: absolute;
+                        display: inline-block;
+                        top:45px;
+                        left:126px;
+                        // background-color: red;
+                        height: 235px;
+                        width: 235px;
+                        border-radius: 50%;
+                    }
                 }
                 .img-desk{
                     display: none;

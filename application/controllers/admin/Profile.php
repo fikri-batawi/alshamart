@@ -20,4 +20,8 @@ class Profile extends CI_Controller{
         $this->load->view('temp/partials/admin_footer');
     }
 
+
+
+    
+
 }
